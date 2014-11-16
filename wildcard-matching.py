@@ -16,8 +16,7 @@ class Solution:
                 return self.isSubMatchRem(n, m - 1)
             else:
                 return self.isSubMatchRem(n - 1, m) or \
-                    self.isSubMatchRem(n, m - 1)
-                    
+                    self.isSubMatchRem(n, m - 1)  
         if n == 0:
             return False
         if self.p[m - 1] == '?':
